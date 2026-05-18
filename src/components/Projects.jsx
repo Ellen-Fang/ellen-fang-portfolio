@@ -5,50 +5,74 @@ function Projects() {
     {
       id: 1,
       title: 'Fortune Ticker',
-      description: 'Built a stock prediction web app that combines machine learning, FastAPI, and an interactive fortune-drawing UI.',
-      technologies: ['Python', 'Machine Learning', 'FastAPI', 'React'],
-      github: 'https://github.com/Ellen-Fang/Fortune-Ticker',
+      subtitle: 'AI Stock Prediction System',
+      description: 'Built an end-to-end AI stock prediction system that combines financial data automation, feature engineering, machine learning inference, FastAPI APIs, an interactive fortune-drawing UI, and Docker-based deployment.',
+      technologies: ['Python', 'FastAPI', 'scikit-learn', 'pandas', 'Twelve Data API', 'Docker', 'Docker Compose', 'Caddy'],
+      github: 'https://github.com/Ellen-Fang/fortune-ticker',
       demo: null,
     },
     {
       id: 2,
-      title: 'Investment Platform Case Study',
-      description: 'Designed and implemented a front-end case study for an investment community platform, focusing on product structure, UI design, and user interaction.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'UI/UX Design'],
-      github: 'https://github.com/Ellen-Fang',
+      title: 'Equity Research & Industry Notes',
+      subtitle: 'AI ASIC & Semiconductor Industry Research',
+      description: 'Built a structured research collection on AI ASICs and semiconductor value chains, covering industry drivers, ASIC vs GPU positioning, CSP custom silicon trends, company case studies, investment risks, and monitoring indicators.',
+      technologies: ['Equity Research', 'Semiconductor Analysis', 'AI Infrastructure', 'Industry Mapping', 'Investment Thesis', 'Risk Analysis'],
+      github: 'https://github.com/Ellen-Fang/equity-research-and-industry',
       demo: null,
     },
     {
       id: 3,
-      title: 'Running Frenchie',
-      description: 'Developed a Unity 2D endless runner game with character animation, procedural ground generation, scoring logic, and interactive gameplay.',
-      technologies: ['Unity', 'C#', 'Game Design'],
-      github: 'https://github.com/Ellen-Fang',
-      demo: null,
+      title: 'Investment Platform Case Study',
+      subtitle: 'Product Prototype & Front-end Case Study',
+      description: 'Transformed an investment community platform proposal into a functional front-end prototype, focusing on product structure, user flow, community browsing, gamified features, and responsive interface implementation.',
+      technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Product Design', 'UI/UX'],
+      github: 'https://github.com/Ellen-Fang/investment-platform-case-study',
+      demo: 'https://ellen-fang.github.io/investment-platform-case-study/profile',
     },
     {
       id: 4,
       title: 'Multivariate Analysis Projects',
-      description: 'Applied statistical methods including PCA, clustering, and logistic regression to analyze structured datasets and communicate insights.',
-      technologies: ['Python', 'R', 'Statistics', 'Data Analysis'],
-      github: 'https://github.com/Ellen-Fang',
+      subtitle: 'Applied Statistical Analysis Portfolio',
+      description: 'Completed a collection of multivariate statistical analysis reports covering PCA, factor analysis, K-means clustering, market segmentation, and logistic regression for classification and interpretation.',
+      technologies: ['SPSS', 'PCA', 'Factor Analysis', 'K-means Clustering', 'Logistic Regression', 'Statistical Reporting'],
+      github: 'https://github.com/Ellen-Fang/multivariate-analysis-projects',
       demo: null,
     },
     {
       id: 5,
-      title: 'Equity Research & Industry Notes',
-      description: 'Organized financial research notes and industry analysis on semiconductors, AI infrastructure, and related technology sectors.',
-      technologies: ['Financial Research', 'Industry Analysis', 'Report Writing'],
-      github: 'https://github.com/Ellen-Fang',
+      title: 'Indigenous Employment Sampling Design',
+      subtitle: 'Survey Sampling Design Report',
+      description: 'Designed a survey sampling plan for Indigenous household employment research, applying stratified sampling, proportional allocation, and two-stage cluster sampling to balance representativeness and fieldwork feasibility.',
+      technologies: ['Survey Sampling', 'Stratified Sampling', 'Two-stage Cluster Sampling', 'Statistical Estimation', 'Report Writing'],
+      github: 'https://github.com/Ellen-Fang/indigenous-employment-sampling-design',
       demo: null,
     },
     {
       id: 6,
-      title: 'Research & Writing Samples',
-      description: 'Collected research reports and writing samples that demonstrate academic writing, data organization, and analytical communication.',
-      technologies: ['Research', 'Academic Writing', 'Data Visualization'],
-      github: 'https://github.com/Ellen-Fang',
+      title: 'Running Frenchie',
+      subtitle: 'Unity 2D Endless Runner Game',
+      description: 'Developed a Unity 2D endless runner game featuring character animation states, randomized platform generation, obstacle avoidance, score tracking, scrolling city backgrounds, and video-based scene transitions.',
+      technologies: ['Unity', 'C#', 'Animator', 'PlayerPrefs', 'VideoPlayer', 'Game Design'],
+      github: 'https://github.com/Ellen-Fang/Running-Frenchie',
       demo: null,
+    },
+    {
+      id: 7,
+      title: 'Research & Writing Samples',
+      subtitle: 'Academic Writing & Economic Reasoning',
+      description: 'Collected undergraduate writing samples that demonstrate research framing, survey-based analysis, English academic writing, and applied economic reasoning through topics such as appearance anxiety and ticket scalping markets.',
+      technologies: ['Academic Writing', 'Survey Research', 'Descriptive Statistics', 'Microeconomics', 'English Writing'],
+      github: 'https://github.com/Ellen-Fang/research-and-writing-samples',
+      demo: null,
+    },
+    {
+      id: 8,
+      title: 'Personal Portfolio Website',
+      subtitle: 'React Portfolio Site',
+      description: 'Designed and built a responsive personal portfolio website with React, Vite, and Tailwind CSS to present projects across data analysis, web development, financial research, and interactive media.',
+      technologies: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'Responsive Design'],
+      github: 'https://github.com/Ellen-Fang/ellen-fang-portfolio',
+      demo: 'https://ellen-fang-portfolio.vercel.app/',
     },
   ]
 
@@ -70,8 +94,26 @@ function Projects() {
               <div className="h-40" style={{background: 'linear-gradient(135deg, #F3D7C2 0%, #E8D8C8 100%)'}}></div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3" style={{color: '#1F2A44'}}>{project.title}</h3>
+                <h3 className="text-xl font-bold mb-1" style={{color: '#1F2A44'}}>{project.title}</h3>
+                {project.subtitle && (
+                  <p className="text-sm font-medium mb-3" style={{color: '#D98C5F'}}>{project.subtitle}</p>
+                )}
+                {project.category && (
+                  <p className="text-xs font-medium mb-4" style={{color: '#6B625B'}}>Category: {project.category}</p>
+                )}
                 <p className="mb-4 text-sm leading-relaxed" style={{color: '#6B625B'}}>{project.description}</p>
+                
+                {project.highlights && (
+                  <div className="mb-4 text-xs leading-relaxed" style={{color: '#6B625B'}}>
+                    <ul className="space-y-1">
+                      {project.highlights.slice(0, 3).map((highlight, idx) => (
+                        <li key={idx} className="list-disc list-inside">
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 
                 <div className="mb-6">
                   <div className="flex flex-wrap gap-2">
