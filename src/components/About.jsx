@@ -5,20 +5,20 @@ function About() {
     {
       title: 'Education',
       content: 'Statistics, National Chengchi University',
-      description: 'Building a foundation in statistical modeling, data analysis, and quantitative reasoning. Minor in Economics from National Chengchi University, with expertise in statistical analysis, economic thinking, and data-driven applications.',
+      description: 'Focused on statistical methods, data analysis, programming, and quantitative research, with applications in finance, machine learning, and data-driven web projects.',
       icon: '🎓'
     },
     {
-      title: 'Current Focus',
-      content: 'Data Analysis & Web Development',
-      description: 'Currently exploring backend development, AI applications, and practical data-driven projects.',
-      icon: '🎯'
+      title: 'Technical Background',
+      content: 'Data Analysis, Web Development, ML',
+      description: 'Applied statistical methods to projects involving PCA, factor analysis, clustering, regression, and survey sampling design. Built data-driven and web-based projects using Python, FastAPI, React, and Docker.',
+      icon: '💻'
     },
     {
-      title: 'Interests',
-      content: 'Game Development, Machine Learning, Financial Research',
-      description: 'Interested in combining analytical methods with interactive and user-centered applications.',
-      icon: '💡'
+      title: 'Research Focus',
+      content: 'Finance & Semiconductor Research',
+      description: 'Conducted financial and semiconductor industry research with focus on AI infrastructure, ASIC value chains, investment theses, and risk monitoring.',
+      icon: '📊'
     }
   ]
 
@@ -35,13 +35,10 @@ function About() {
               className="rounded-2xl w-full h-auto object-contain shadow-lg"
             />
             <p className="leading-relaxed" style={{color: '#1F2A44'}}>
-              I'm a statistics student interested in turning data into practical insights. My work spans data analysis, financial research, web development, and interactive projects, with a focus on building tools that connect analytical thinking with real-world use cases.
+              I'm a statistics student at National Chengchi University, interested in data analysis, financial research, and building practical web-based tools. My projects combine statistical thinking, backend development, machine learning, and user-centered interfaces.
             </p>
             <p className="leading-relaxed" style={{color: '#1F2A44'}}>
-              Beyond coursework, I have gained hands-on experience in system maintenance, backend development, event organization, and team coordination. These experiences shaped my interest in using programming and AI not only for analysis, but also for creating products and services that solve concrete problems.
-            </p>
-            <p className="leading-relaxed" style={{color: '#6B625B'}}>
-              I enjoy working across both technical and creative fields, from statistical modeling and web systems to game development and visual design.
+              Through my projects, I explore how statistical methods and technical implementation can support financial research, data products, and interactive user experiences.
             </p>
           </div>
           

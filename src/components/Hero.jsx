@@ -5,10 +5,10 @@ function Hero() {
     <section className="hero-section px-4" style={{backgroundColor: '#FFF8F0'}}>
       <div className="hero-content max-w-3xl mx-auto text-center">
         <p className="text-lg mb-3 leading-relaxed font-medium" style={{color: '#1F2A44'}}>
-          A quick overview of my background, projects, technical skills, and resume.
+          Statistics student building data-driven applications, financial research projects, and interactive web experiences.
         </p>
         <p className="hero-paragraph" style={{color: '#6B625B'}}>
-          Scroll down to explore my work in statistics, data analysis, web development, and interactive projects, along with selected case studies and practical tools I have built along the way.
+          I combine statistics, financial research, backend development, and front-end implementation to build practical projects—from machine learning stock prediction tools to research-driven case studies and interactive applications.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
