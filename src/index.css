@@ -58,3 +58,13 @@ html {
   text-align: center;
   text-wrap: balance;
 }
+
+/* Hero Section Vertical Centering */
+.hero-section {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+}
