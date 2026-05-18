@@ -5,7 +5,7 @@ function About() {
     {
       title: 'Education',
       content: 'Statistics, National Chengchi University',
-      description: 'Building a foundation in statistical modeling, data analysis, and quantitative reasoning.',
+      description: 'Building a foundation in statistical modeling, data analysis, and quantitative reasoning. Minor in Economics from National Chengchi University, with expertise in statistical analysis, economic thinking, and data-driven applications.',
       icon: '🎓'
     },
     {
