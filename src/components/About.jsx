@@ -23,21 +23,9 @@ function About() {
   ]
 
   return (
-    <>
-      {/* Hero Section */}
-      <section id="about-hero" className="py-16 px-4" style={{backgroundColor: '#FFF8F0'}}>
-        <div className="max-w-6xl mx-auto">
-          <div className="hero-text text-center">
-            <h2 className="text-4xl font-bold mb-6" style={{color: '#1F2A44'}}>A quick overview of my background, projects, technical skills, and resume.</h2>
-            <p className="text-lg" style={{color: '#6B625B'}}>Scroll down to explore my work in statistics, data analysis, web development, and interactive projects, including selected case studies, personal experiments, and practical tools I have built along the way.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Main About Section */}
-      <section id="about" className="py-20 px-4" style={{backgroundColor: '#FFFFFF'}}>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-16 text-center" style={{color: '#1F2A44'}}>About Me</h2>
+    <section id="about" className="py-20 px-4" style={{backgroundColor: '#FFF8F0'}}>
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold mb-16 text-center" style={{color: '#1F2A44'}}>About Me</h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
@@ -121,7 +109,6 @@ function About() {
         </div>
       </div>
     </section>
-    </>
   )
 }
 

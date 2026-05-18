@@ -7,8 +7,8 @@ function Hero() {
         <p className="text-lg mb-3 leading-relaxed font-medium" style={{color: '#1F2A44'}}>
           A quick overview of my background, projects, technical skills, and resume.
         </p>
-        <p className="text-sm md:text-base mb-8 leading-relaxed max-w-2xl mx-auto" style={{color: '#6B625B'}}>
-          Scroll down to explore my work in statistics, data analysis, web development, and interactive projects.
+        <p className="hero-paragraph" style={{color: '#6B625B'}}>
+          Scroll down to explore my work in statistics, data analysis, web development, and interactive projects, along with selected case studies and practical tools I have built along the way.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

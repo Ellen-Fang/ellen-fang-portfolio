@@ -50,17 +50,11 @@ html {
 }
 
 /* Hero Text Styles */
-.hero-text h2,
-.hero-text p {
-  text-wrap: balance;
-}
-
-.hero-text h2 {
-  margin-bottom: 1.5rem;
-}
-
-.hero-text p {
-  max-width: 930px;
-  margin: 0 auto;
+.hero-paragraph {
+  font-size: 1rem;
   line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  text-wrap: balance;
 }
