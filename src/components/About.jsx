@@ -8,7 +8,11 @@ function About() {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl h-64 md:h-80"></div>
+            <img 
+              src="/profile.jpg" 
+              alt="Ellen Fang" 
+              className="rounded-2xl w-full h-64 md:h-80 object-cover shadow-lg"
+            />
           </div>
           
           <div className="space-y-6">

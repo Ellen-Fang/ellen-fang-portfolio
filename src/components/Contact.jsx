@@ -9,15 +9,15 @@ function Contact() {
           I'm always interested in discussing new projects and opportunities. Feel free to reach out!
         </p>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Email */}
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:runyusheng@gmail.com"
             className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
           >
             <div className="text-4xl mb-4">✉️</div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Email</h3>
-            <p className="text-gray-700 break-all">your.email@example.com</p>
+            <p className="text-gray-700 break-all">runyusheng@gmail.com</p>
           </a>
           
           {/* GitHub */}
@@ -31,18 +31,7 @@ function Contact() {
             <h3 className="text-lg font-bold text-gray-900 mb-2">GitHub</h3>
             <p className="text-gray-700">Ellen-Fang</p>
           </a>
-          
-          {/* LinkedIn */}
-          <a
-            href="https://linkedin.com/in/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
-          >
-            <div className="text-4xl mb-4">💼</div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">LinkedIn</h3>
-            <p className="text-gray-700">Your Profile</p>
-          </a>
+
         </div>
       </div>
     </section>

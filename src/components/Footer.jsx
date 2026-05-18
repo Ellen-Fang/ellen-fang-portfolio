@@ -33,12 +33,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="mailto:your.email@example.com" className="hover:text-white transition-colors">
+                <a href="mailto:runyusheng@gmail.com" className="hover:text-white transition-colors">
                   Email
                 </a>
               </li>
