@@ -3,9 +3,9 @@ import React from 'react'
 function Hero() {
   return (
     <section className="hero-section px-4" style={{backgroundColor: '#FFF8F0'}}>
-      <div className="hero-content max-w-3xl mx-auto text-center">
-        <p className="text-lg mb-3 leading-relaxed font-medium" style={{color: '#1F2A44'}}>
-          Statistics student building data-driven applications, financial research projects, and interactive web experiences.
+      <div className="hero-content max-w-5xl mx-auto text-center">
+        <p className="text-base mb-3 leading-snug font-medium" style={{color: '#1F2A44'}}>
+          Statistics student exploring data analysis, financial research, and interactive web development.
         </p>
         <p className="hero-paragraph" style={{color: '#6B625B'}}>
           I combine statistics, financial research, backend development, and front-end implementation to build practical projects—from machine learning stock prediction tools to research-driven case studies and interactive applications.
