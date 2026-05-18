@@ -3,7 +3,7 @@ import React from 'react'
 function Hero() {
   return (
     <section className="hero-section px-4" style={{backgroundColor: '#FFF8F0'}}>
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="hero-content max-w-3xl mx-auto text-center">
         <p className="text-lg mb-3 leading-relaxed font-medium" style={{color: '#1F2A44'}}>
           A quick overview of my background, projects, technical skills, and resume.
         </p>

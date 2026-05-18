@@ -68,3 +68,7 @@ html {
   align-items: center;
   padding: 0 24px;
 }
+
+.hero-content {
+  transform: translateY(50px);
+}
