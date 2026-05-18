@@ -12,9 +12,9 @@ function Resume() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8">Education</h3>
             <div className="space-y-8">
               <div className="border-l-4 border-blue-600 pl-6">
-                <h4 className="text-lg font-semibold text-gray-900">Statistics / Data Science</h4>
-                <p className="text-gray-600 text-sm mt-1">University Name | Year</p>
-                <p className="text-gray-700 mt-2">Relevant coursework in statistical methods, data analysis, and quantitative research.</p>
+                <h4 className="text-lg font-semibold text-gray-900">Bachelor of Science in Statistics</h4>
+                <p className="text-gray-600 text-sm mt-1">National Chengchi University | 2023/09 - 2027/06</p>
+                <p className="text-gray-700 mt-2">Focused on statistical methods, data analysis, and quantitative research with applications in finance and data science.</p>
               </div>
             </div>
           </div>

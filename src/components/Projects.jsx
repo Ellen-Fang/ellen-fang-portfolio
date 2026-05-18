@@ -15,7 +15,7 @@ function Projects() {
       title: 'Investment Platform Case Study',
       description: 'Designed and implemented a front-end case study for an investment community platform, focusing on product structure, UI design, and user interaction.',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'UI/UX Design'],
-      github: null,
+      github: 'https://github.com/Ellen-Fang',
       demo: null,
     },
     {
@@ -31,7 +31,7 @@ function Projects() {
       title: 'Multivariate Analysis Projects',
       description: 'Applied statistical methods including PCA, clustering, and logistic regression to analyze structured datasets and communicate insights.',
       technologies: ['Python', 'R', 'Statistics', 'Data Analysis'],
-      github: null,
+      github: 'https://github.com/Ellen-Fang',
       demo: null,
     },
     {
@@ -39,7 +39,7 @@ function Projects() {
       title: 'Equity Research & Industry Notes',
       description: 'Organized financial research notes and industry analysis on semiconductors, AI infrastructure, and related technology sectors.',
       technologies: ['Financial Research', 'Industry Analysis', 'Report Writing'],
-      github: null,
+      github: 'https://github.com/Ellen-Fang',
       demo: null,
     },
     {
@@ -47,7 +47,7 @@ function Projects() {
       title: 'Research & Writing Samples',
       description: 'Collected research reports and writing samples that demonstrate academic writing, data organization, and analytical communication.',
       technologies: ['Research', 'Academic Writing', 'Data Visualization'],
-      github: null,
+      github: 'https://github.com/Ellen-Fang',
       demo: null,
     },
   ]
