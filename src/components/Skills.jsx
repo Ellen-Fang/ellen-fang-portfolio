@@ -31,14 +31,24 @@ function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-20 px-4" style={{backgroundColor: '#FFF8F0'}}>
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#1F2A44'}}>Skills</h2>
-        <p className="text-center mb-6 max-w-2xl mx-auto" style={{color: '#6B625B'}}>
-          Combining statistics, economics, and web development, I build data-driven projects with practical applications.
+    <section id="skills" className="relative py-20 px-4 overflow-hidden" style={{backgroundColor: '#FAF6F1'}}>
+      {/* 装饰背景 blob */}
+      <div 
+        className="absolute top-10 -left-20 w-64 h-64 rounded-full opacity-20 blur-3xl"
+        style={{backgroundColor: '#FFA500'}}
+      ></div>
+      <div 
+        className="absolute bottom-20 -right-20 w-80 h-80 rounded-full opacity-15 blur-3xl"
+        style={{backgroundColor: '#F4A460'}}
+      ></div>
+      
+      <div className="relative max-w-6xl mx-auto z-10">
+        <h2 className="text-4xl font-bold mb-3 text-center" style={{color: '#1F2A44'}}>Skills</h2>
+        <p className="text-center mb-2 max-w-2xl mx-auto" style={{color: '#6B625B'}}>
+          A mix of statistics, economics, research, and development skills that support my data-driven projects.
         </p>
         <p className="text-center mb-16 max-w-2xl mx-auto" style={{color: '#6B625B', fontSize: '0.95rem'}}>
-          A diverse skill set developed through academic studies and practical projects.
+          Combining statistics, economics, and web development, I build practical applications.
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -47,26 +57,44 @@ function Skills() {
             return (
               <div
                 key={idx}
-                className="rounded-xl p-8 border shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group cursor-default"
+                className="relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group cursor-default"
                 style={{
-                  backgroundColor: '#FFFCF7',
-                  borderColor: '#E8D8C8',
-                  borderWidth: '1.5px'
+                  backgroundColor: 'rgba(255, 252, 247, 0.8)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1.5px solid #F5E6D3',
+                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.borderColor = '#D98C5F'}
-                onMouseLeave={(e) => e.currentTarget.style.borderColor = '#E8D8C8'}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(217, 140, 95, 0.2)'
+                  e.currentTarget.style.borderColor = '#F0A867'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.08)'
+                  e.currentTarget.style.borderColor = '#F5E6D3'
+                }}
               >
+                {/* 右上角装饰 */}
+                <div className="absolute top-4 right-4 w-12 h-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex gap-1">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{backgroundColor: '#F4A460'}}></div>
+                    <div className="w-1.5 h-1.5 rounded-full" style={{backgroundColor: '#FFB366'}}></div>
+                    <div className="w-1.5 h-1.5 rounded-full" style={{backgroundColor: '#FFCC99'}}></div>
+                  </div>
+                </div>
+
                 <div className="flex items-center space-x-3 mb-6">
                   <div 
-                    className="p-2 rounded-lg"
-                    style={{backgroundColor: '#FFF0E6'}}
+                    className="p-2.5 rounded-lg transition-all duration-300 group-hover:scale-110"
+                    style={{
+                      background: 'linear-gradient(135deg, #FFE4CC 0%, #FFE6D5 100%)',
+                    }}
                   >
                     <IconComponent 
                       size={24} 
-                      style={{color: '#D98C5F', strokeWidth: 1.5}}
+                      style={{color: '#D97706', strokeWidth: 1.8}}
                     />
                   </div>
-                  <h3 className="text-xl font-bold" style={{color: '#1F2A44'}}>
+                  <h3 className="text-lg font-bold" style={{color: '#1F2A44'}}>
                     {category.category}
                   </h3>
                 </div>
@@ -75,11 +103,21 @@ function Skills() {
                   {category.skills.map((skill, skillIdx) => (
                     <span
                       key={skillIdx}
-                      className="px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-200 hover:shadow-sm"
+                      className="px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-200 cursor-pointer"
                       style={{
-                        backgroundColor: '#FAE8D8',
-                        color: '#D98C5F',
-                        border: '1px solid #F0D4BD',
+                        backgroundColor: '#FEF3E6',
+                        color: '#C97A29',
+                        border: '1px solid #FDDDBD',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = '#FFE6CC'
+                        e.currentTarget.style.color = '#A85A0A'
+                        e.currentTarget.style.transform = 'translateY(-2px)'
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = '#FEF3E6'
+                        e.currentTarget.style.color = '#C97A29'
+                        e.currentTarget.style.transform = 'translateY(0)'
                       }}
                     >
                       {skill}
