@@ -14,7 +14,7 @@ function About() {
     },
     {
       title: 'Interests',
-      content: 'Financial Research, Machine Learning',
+      content: 'Game Development, Data Analysis, Machine Learning',
       icon: '💡'
     }
   ]
