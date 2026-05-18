@@ -29,7 +29,7 @@ function About() {
             <img 
               src="/profile.jpg" 
               alt="Ellen Fang" 
-              className="rounded-2xl w-full h-80 object-cover shadow-lg object-center"
+              className="rounded-2xl w-full h-auto object-contain shadow-lg"
             />
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm a statistics student passionate about turning data into insights and insights into impact. My work spans data analysis, financial research, web development, and interactive projects.
