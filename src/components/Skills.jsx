@@ -1,32 +1,37 @@
 import React from 'react'
-import { BarChart3, Code, Server, Search, Gamepad2 } from 'lucide-react'
+import { BarChart3, Code, Server, Search, Gamepad2, Brain, TrendingUp } from 'lucide-react'
 
 function Skills() {
   const skillCategories = [
     {
-      category: 'Data Analysis',
+      category: 'Data Analysis & Statistics',
       icon: BarChart3,
-      skills: ['Python', 'R', 'SPSS', 'Excel', 'PCA', 'Clustering', 'Regression'],
+      skills: ['Python', 'SPSS', 'pandas', 'NumPy', 'PCA', 'Factor Analysis', 'Clustering', 'Regression', 'Survey Sampling'],
+    },
+    {
+      category: 'Machine Learning & Data Product',
+      icon: Brain,
+      skills: ['scikit-learn', 'Feature Engineering', 'Model Inference', 'Financial Data', 'API Integration', 'Data Pipeline'],
     },
     {
       category: 'Web Development',
       icon: Code,
-      skills: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
+      skills: ['React', 'Vite', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Responsive Design'],
     },
     {
-      category: 'Backend & Tools',
+      category: 'Backend & Deployment',
       icon: Server,
-      skills: ['FastAPI', 'Git', 'GitHub', 'Docker', 'APIs'],
+      skills: ['FastAPI', 'APIs', 'Docker', 'Docker Compose', 'Caddy', 'Git', 'GitHub'],
     },
     {
-      category: 'Research',
-      icon: Search,
-      skills: ['Financial Research', 'Industry Analysis', 'Report Writing'],
+      category: 'Research & Finance',
+      icon: TrendingUp,
+      skills: ['Equity Research', 'Semiconductor Analysis', 'AI Infrastructure', 'Industry Mapping', 'Investment Thesis', 'Risk Analysis', 'Report Writing'],
     },
     {
       category: 'Game Development',
       icon: Gamepad2,
-      skills: ['Unity', 'C#', 'Game Design'],
+      skills: ['Unity', 'C#', 'Animator', 'PlayerPrefs', 'VideoPlayer', 'Game Design'],
     },
   ]
 
