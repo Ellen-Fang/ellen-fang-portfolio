@@ -46,6 +46,65 @@ function Resume() {
             </div>
           </div>
         </div>
+
+        {/* Experience & Leadership Section */}
+        <div className="mt-20">
+          <div className="bg-white rounded-xl p-8 shadow-md border border-gray-100">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">💼 Experience & Leadership</h3>
+            <div className="space-y-8">
+              {/* Experience Item 1 */}
+              <div className="border-l-4 border-blue-600 pl-6">
+                <h4 className="text-lg font-semibold text-gray-900">Department of Statistics, NCCU — Computer Assistant</h4>
+                <p className="text-gray-500 text-sm font-medium mt-1 mb-3">Sep 2024 – Present</p>
+                <p className="text-gray-700 leading-relaxed">
+                  Maintained departmental hardware and software resources, supported technical needs, edited admission videos, and led student assistants through structured task coordination.
+                </p>
+              </div>
+
+              {/* Experience Item 2 */}
+              <div className="border-l-4 border-blue-600 pl-6">
+                <h4 className="text-lg font-semibold text-gray-900">NCCUPASS — Backend Developer</h4>
+                <p className="text-gray-500 text-sm font-medium mt-1 mb-3">2025 – Present</p>
+                <p className="text-gray-700 leading-relaxed mb-2">
+                  Maintained backend services and developed software features for a campus service platform.
+                </p>
+                <a href="https://nccupass.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                  https://nccupass.com/ →
+                </a>
+              </div>
+
+              {/* Experience Item 3 */}
+              <div className="border-l-4 border-blue-600 pl-6">
+                <h4 className="text-lg font-semibold text-gray-900">PyDay 2025 — Organizer</h4>
+                <p className="text-gray-500 text-sm font-medium mt-1 mb-3">2025</p>
+                <p className="text-gray-700 leading-relaxed mb-2">
+                  Helped organize a programming event that strengthened my interest in coding, AI, and developer communities.
+                </p>
+                <a href="https://www.accupass.com/event/2505150542041736392010" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                  View Event →
+                </a>
+              </div>
+
+              {/* Experience Item 4 */}
+              <div className="border-l-4 border-blue-600 pl-6">
+                <h4 className="text-lg font-semibold text-gray-900">NCCU MITC — Design Team Member</h4>
+                <p className="text-gray-500 text-sm font-medium mt-1 mb-3">Sep 2025 – Jun 2026</p>
+                <p className="text-gray-700 leading-relaxed">
+                  Created visual materials and promotional designs for club activities related to technology and programming.
+                </p>
+              </div>
+
+              {/* Experience Item 5 */}
+              <div className="border-l-4 border-blue-600 pl-6">
+                <h4 className="text-lg font-semibold text-gray-900">NCCU Dancing Club — Popping Instructor</h4>
+                <p className="text-gray-500 text-sm font-medium mt-1 mb-3"></p>
+                <p className="text-gray-700 leading-relaxed">
+                  Taught Popping fundamentals, rhythm training, and performance practice to club members.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
