@@ -9,29 +9,21 @@ function Contact() {
           I'm always interested in discussing new projects and opportunities. Feel free to reach out!
         </p>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Email */}
-          <a
-            href="mailto:runyusheng@gmail.com"
-            className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
-          >
-            <div className="text-4xl mb-4">✉️</div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Email</h3>
-            <p className="text-gray-700 break-all">runyusheng@gmail.com</p>
-          </a>
-          
-          {/* GitHub */}
+        <div className="flex flex-col items-center">
           <a
             href="https://github.com/Ellen-Fang"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
+            className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow w-full md:w-96"
           >
             <div className="text-4xl mb-4">🐙</div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">GitHub</h3>
             <p className="text-gray-700">Ellen-Fang</p>
           </a>
-
+          
+          <p className="text-gray-600 text-center mt-6 max-w-md">
+            Feel free to explore my projects on GitHub. For other inquiries, you can reach out directly.
+          </p>
         </div>
       </div>
     </section>

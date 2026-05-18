@@ -5,50 +5,50 @@ function Projects() {
     {
       id: 1,
       title: 'Fortune Ticker',
-      description: 'Stock price short-term prediction with fortune cookie interactive interface. Demonstrates data processing, machine learning, and full-stack integration.',
-      technologies: ['Python', 'Machine Learning', 'FastAPI', 'React', 'Deployment'],
+      description: 'Built a stock prediction web app that combines machine learning, FastAPI, and an interactive fortune-drawing UI.',
+      technologies: ['Python', 'Machine Learning', 'FastAPI', 'React'],
       github: 'https://github.com/Ellen-Fang/Fortune-Ticker',
-      demo: '#',
+      demo: null,
     },
     {
       id: 2,
       title: 'Investment Platform Case Study',
-      description: 'A comprehensive case study of a fintech community platform. Showcases React development, TypeScript, Tailwind CSS, and product design thinking.',
+      description: 'Designed and implemented a front-end case study for an investment community platform, focusing on product structure, UI design, and user interaction.',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'UI/UX Design'],
-      github: '#',
-      demo: '#',
+      github: null,
+      demo: null,
     },
     {
       id: 3,
       title: 'Running Frenchie',
-      description: 'A 2D endless runner game featuring character animation, procedural scene generation, and interactive game mechanics.',
-      technologies: ['Unity', 'C#', 'Game Design', '2D Graphics'],
+      description: 'Developed a Unity 2D endless runner game with character animation, procedural ground generation, scoring logic, and interactive gameplay.',
+      technologies: ['Unity', 'C#', 'Game Design'],
       github: 'https://github.com/Ellen-Fang',
-      demo: '#',
+      demo: null,
     },
     {
       id: 4,
       title: 'Multivariate Analysis Projects',
-      description: 'Statistical analysis projects including PCA, clustering, logistic regression, and other advanced multivariate methods.',
+      description: 'Applied statistical methods including PCA, clustering, and logistic regression to analyze structured datasets and communicate insights.',
       technologies: ['Python', 'R', 'Statistics', 'Data Analysis'],
-      github: '#',
-      demo: '#',
+      github: null,
+      demo: null,
     },
     {
       id: 5,
       title: 'Equity Research & Industry Notes',
-      description: 'Financial research and industry analysis focusing on semiconductors and AI infrastructure. Demonstrates financial literacy and industry knowledge.',
-      technologies: ['Financial Analysis', 'Industry Research', 'Report Writing'],
-      github: '#',
-      demo: '#',
+      description: 'Organized financial research notes and industry analysis on semiconductors, AI infrastructure, and related technology sectors.',
+      technologies: ['Financial Research', 'Industry Analysis', 'Report Writing'],
+      github: null,
+      demo: null,
     },
     {
       id: 6,
       title: 'Research & Writing Samples',
-      description: 'Academic research reports and writing samples showcasing analytical thinking, data presentation, and communication skills.',
+      description: 'Collected research reports and writing samples that demonstrate academic writing, data organization, and analytical communication.',
       technologies: ['Research', 'Academic Writing', 'Data Visualization'],
-      github: '#',
-      demo: '#',
+      github: null,
+      demo: null,
     },
   ]
 
@@ -86,15 +86,17 @@ function Projects() {
                 </div>
                 
                 <div className="flex gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center px-4 py-2 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors text-sm"
-                  >
-                    GitHub
-                  </a>
-                  {project.demo !== '#' && (
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 text-center px-4 py-2 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors text-sm"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {project.demo && (
                     <a
                       href={project.demo}
                       target="_blank"

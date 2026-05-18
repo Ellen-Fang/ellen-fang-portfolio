@@ -34,15 +34,9 @@ function Resume() {
         
         {/* CTA */}
         <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-6 text-lg">
-            For a detailed view of my background and accomplishments
+          <p className="text-gray-600 text-lg">
+            Resume available upon request.
           </p>
-          <a
-            href="#"
-            className="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
-          >
-            Download Resume
-          </a>
         </div>
       </div>
     </section>

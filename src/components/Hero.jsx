@@ -4,11 +4,14 @@ function Hero() {
   return (
     <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
           Ellen Fang
         </h1>
-        <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-500 mb-6 leading-relaxed">
           Statistics Student | Data Analysis | Financial Research | Web Development
+        </p>
+        <p className="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed font-light max-w-3xl mx-auto">
+          Building projects across data analysis, financial research, web development, and interactive applications.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

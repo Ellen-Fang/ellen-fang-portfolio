@@ -4,27 +4,23 @@ function Skills() {
   const skillCategories = [
     {
       category: 'Data Analysis',
-      skills: ['Python', 'R', 'SPSS', 'Excel', 'Statistics'],
+      skills: ['Python', 'R', 'SPSS', 'Excel', 'PCA', 'Clustering', 'Regression'],
     },
     {
       category: 'Web Development',
-      skills: ['React', 'Vite', 'Tailwind CSS', 'HTML', 'CSS', 'JavaScript'],
+      skills: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
     },
     {
       category: 'Backend & Tools',
       skills: ['FastAPI', 'Git', 'GitHub', 'Docker', 'APIs'],
     },
     {
-      category: 'Financial Research',
-      skills: ['Financial Analysis', 'Industry Research', 'Report Writing', 'Market Analysis'],
+      category: 'Research',
+      skills: ['Financial Research', 'Industry Analysis', 'Report Writing'],
     },
     {
       category: 'Game Development',
-      skills: ['Unity', 'C#', 'Game Design', '2D Graphics'],
-    },
-    {
-      category: 'Other',
-      skills: ['Machine Learning', 'Data Visualization', 'Deployment', 'Problem Solving'],
+      skills: ['Unity', 'C#', 'Game Design'],
     },
   ]
 

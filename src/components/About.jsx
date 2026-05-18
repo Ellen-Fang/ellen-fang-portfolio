@@ -1,54 +1,57 @@
 import React from 'react'
 
 function About() {
+  const highlights = [
+    {
+      title: 'Education',
+      content: 'Statistics',
+      icon: '🎓'
+    },
+    {
+      title: 'Current Focus',
+      content: 'Data Analysis & Web Development',
+      icon: '🎯'
+    },
+    {
+      title: 'Interests',
+      content: 'Financial Research, Machine Learning',
+      icon: '💡'
+    }
+  ]
+
   return (
     <section id="about" className="py-20 px-4 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">About Me</h2>
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-gray-900 mb-16 text-center">About Me</h2>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-6">
             <img 
               src="/profile.jpg" 
               alt="Ellen Fang" 
-              className="rounded-2xl w-full h-64 md:h-80 object-cover shadow-lg"
+              className="rounded-2xl w-full h-80 object-cover shadow-lg"
             />
+            <p className="text-lg text-gray-700 leading-relaxed">
+              I'm a statistics student passionate about turning data into insights and insights into impact. My work spans data analysis, financial research, web development, and interactive projects.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              I combine statistical rigor with practical implementation skills, and I'm fascinated by how technology can solve real-world problems.
+            </p>
           </div>
           
-          <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              I'm a Statistics student passionate about turning data into insights and insights into impact. My journey spans across data analysis, financial research, and web development.
-            </p>
-            
-            <p className="text-lg text-gray-700 leading-relaxed">
-              With a strong foundation in statistical methods and quantitative analysis, I'm fascinated by how technology can solve real-world problems. I combine analytical rigor with practical implementation skills.
-            </p>
-            
-            <div className="space-y-4">
-              <div className="flex items-start space-x-4">
-                <div className="text-2xl">📊</div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-lg">Data Analysis & Research</h3>
-                  <p className="text-gray-600">Statistical analysis, financial research, and data-driven insights</p>
+          <div className="space-y-5">
+            {highlights.map((item, idx) => (
+              <div 
+                key={idx}
+                className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-lg p-5 border border-gray-100 hover:border-blue-300 transition-colors"
+              >
+                <div className="flex items-center space-x-3 mb-2">
+                  <span className="text-2xl">{item.icon}</span>
+                  <h3 className="font-bold text-gray-900">{item.title}</h3>
                 </div>
+                <p className="text-gray-700 ml-11">{item.content}</p>
               </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="text-2xl">💻</div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-lg">Web Development</h3>
-                  <p className="text-gray-600">Building interactive and responsive web applications</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="text-2xl">🎮</div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-lg">Creative Projects</h3>
-                  <p className="text-gray-600">Game development and interactive experiences</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
