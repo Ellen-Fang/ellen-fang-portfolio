@@ -9,21 +9,33 @@ function Contact() {
           I'm always interested in discussing new projects and opportunities. Feel free to reach out!
         </p>
         
-        <div className="flex flex-col items-center">
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           <a
             href="https://github.com/Ellen-Fang"
             target="_blank"
             rel="noopener noreferrer"
-            className="border rounded-xl p-8 text-center hover:shadow-lg transition-all w-full md:w-96"
+            className="border rounded-xl p-8 text-center hover:shadow-lg transition-all"
             style={{backgroundColor: '#FFFCF7', borderColor: '#E8D8C8'}}
           >
             <div className="text-4xl mb-4">🐙</div>
             <h3 className="text-lg font-bold mb-2" style={{color: '#1F2A44'}}>GitHub</h3>
             <p style={{color: '#1F2A44'}}>Ellen-Fang</p>
           </a>
-          
-          <p className="text-center mt-6 max-w-md" style={{color: '#6B625B'}}>
-            Feel free to explore my projects on GitHub. For other inquiries, you can reach out directly.
+
+          <a
+            href="mailto:runyusheng@gmail.com"
+            className="border rounded-xl p-8 text-center hover:shadow-lg transition-all"
+            style={{backgroundColor: '#FFFCF7', borderColor: '#E8D8C8'}}
+          >
+            <div className="text-4xl mb-4">✉️</div>
+            <h3 className="text-lg font-bold mb-2" style={{color: '#1F2A44'}}>Gmail</h3>
+            <p style={{color: '#1F2A44'}}>runyusheng@gmail.com</p>
+          </a>
+        </div>
+        
+        <div className="flex flex-col items-center">
+          <p className="text-center max-w-md" style={{color: '#6B625B'}}>
+            Feel free to reach out through GitHub or email. I'd love to discuss projects and opportunities!
           </p>
         </div>
       </div>
