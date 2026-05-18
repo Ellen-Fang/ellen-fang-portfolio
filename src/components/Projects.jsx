@@ -53,7 +53,7 @@ function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 px-4 bg-gray-50">
+    <section id="projects" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Featured Projects</h2>
         <p className="text-gray-600 text-center mb-16 max-w-2xl mx-auto">
@@ -64,7 +64,7 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              className="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all duration-300 overflow-hidden"
             >
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 h-40"></div>
               
@@ -77,7 +77,7 @@ function Projects() {
                     {project.technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full"
+                        className="inline-block bg-sky-100 text-sky-700 text-xs font-medium px-3 py-1 rounded-full"
                       >
                         {tech}
                       </span>

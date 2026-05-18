@@ -20,7 +20,7 @@ function About() {
   ]
 
   return (
-    <section id="about" className="py-20 px-4 bg-white">
+    <section id="about" className="py-20 px-4 bg-slate-50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-16 text-center">About Me</h2>
         
@@ -43,7 +43,7 @@ function About() {
             {highlights.map((item, idx) => (
               <div 
                 key={idx}
-                className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-lg p-5 border border-gray-100 hover:border-blue-300 transition-colors"
+                className="bg-white rounded-lg p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all"
               >
                 <div className="flex items-center space-x-3 mb-2">
                   <span className="text-2xl">{item.icon}</span>

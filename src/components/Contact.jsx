@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 bg-white">
+    <section id="contact" className="py-20 px-4 bg-slate-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Get In Touch</h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -14,7 +14,7 @@ function Contact() {
             href="https://github.com/Ellen-Fang"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow w-full md:w-96"
+            className="bg-white border border-slate-200 rounded-xl p-8 text-center hover:shadow-lg hover:border-sky-300 transition-all w-full md:w-96"
           >
             <div className="text-4xl mb-4">🐙</div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">GitHub</h3>

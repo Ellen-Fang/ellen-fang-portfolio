@@ -20,12 +20,12 @@ function Navbar() {
   ]
 
   return (
-    <nav className="fixed w-full bg-white shadow-sm z-50">
+    <nav className="fixed w-full bg-white border-b border-slate-200 shadow-sm z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div
-            className="text-2xl font-bold text-gray-900 cursor-pointer hover:text-blue-600 transition-colors"
+            className="text-2xl font-bold text-slate-900 cursor-pointer hover:text-sky-600 transition-colors"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             Ellen Fang
@@ -37,7 +37,7 @@ function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                className="text-slate-600 hover:text-sky-600 transition-colors font-medium"
               >
                 {link.label}
               </button>
@@ -62,7 +62,7 @@ function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+                className="block w-full text-left px-4 py-2 text-slate-600 hover:bg-blue-50 rounded-lg transition-colors"
               >
                 {link.label}
               </button>

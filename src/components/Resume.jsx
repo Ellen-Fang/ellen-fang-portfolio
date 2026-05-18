@@ -8,7 +8,7 @@ function Resume() {
   ]
 
   return (
-    <section id="resume" className="py-20 px-4 bg-gray-50">
+    <section id="resume" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-16 text-center">Education & Background</h2>
         
@@ -29,14 +29,14 @@ function Resume() {
           
           {/* Academic & Project Background */}
           <div>
-            <div className="bg-white rounded-xl p-8 shadow-md border border-gray-100 h-full">
+            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200 shadow-sm h-full">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Academic & Project Background</h3>
               <div className="space-y-5">
                 {backgroundPoints.map((point, idx) => (
                   <div key={idx} className="flex space-x-4">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100">
-                        <span className="text-blue-600 font-bold text-sm">✓</span>
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-emerald-100">
+                        <span className="text-emerald-600 font-bold text-sm">✓</span>
                       </div>
                     </div>
                     <p className="text-gray-700 leading-relaxed">{point}</p>
