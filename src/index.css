@@ -61,10 +61,10 @@ html {
 
 /* Hero Section Vertical Centering */
 .hero-section {
-  min-height: 420px;
+  min-height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 48px 24px;
+  padding: 0 24px;
 }

@@ -23,7 +23,7 @@ function About() {
   ]
 
   return (
-    <section id="about" className="py-20 px-4" style={{backgroundColor: '#FFF8F0'}}>
+    <section id="about" className="pt-12 pb-20 px-4" style={{backgroundColor: '#FFF8F0'}}>
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-16 text-center" style={{color: '#1F2A44'}}>About Me</h2>
         
