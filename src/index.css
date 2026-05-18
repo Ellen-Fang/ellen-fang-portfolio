@@ -48,3 +48,19 @@ html {
     transform: translateY(0);
   }
 }
+
+/* Hero Text Styles */
+.hero-text h2,
+.hero-text p {
+  text-wrap: balance;
+}
+
+.hero-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  max-width: 820px;
+  margin: 0 auto;
+  line-height: 1.7;
+}

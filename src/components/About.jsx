@@ -23,9 +23,21 @@ function About() {
   ]
 
   return (
-    <section id="about" className="py-20 px-4" style={{backgroundColor: '#FFF8F0'}}>
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-16 text-center" style={{color: '#1F2A44'}}>About Me</h2>
+    <>
+      {/* Hero Section */}
+      <section id="about-hero" className="py-16 px-4" style={{backgroundColor: '#FFF8F0'}}>
+        <div className="max-w-6xl mx-auto">
+          <div className="hero-text text-center">
+            <h2 className="text-4xl font-bold mb-6" style={{color: '#1F2A44'}}>A quick introduction to my background, projects, technical skills, and experience.</h2>
+            <p className="text-lg" style={{color: '#6B625B'}}>Explore my work in statistics, data analysis, web development, and interactive digital projects — along with the ideas, tools, and experience behind them.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main About Section */}
+      <section id="about" className="py-20 px-4" style={{backgroundColor: '#FFFFFF'}}>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-16 text-center" style={{color: '#1F2A44'}}>About Me</h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
@@ -109,6 +121,7 @@ function About() {
         </div>
       </div>
     </section>
+    </>
   )
 }
 
